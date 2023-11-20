@@ -4,17 +4,15 @@
 
 <div align="center">
 
-[![NPM](https://img.shields.io/npm/dm/@hugocxl/react-to-image.svg?&logo=npm)](https://www.npmjs.com/package/@hugocxl/react-to-image)
-[![Version](https://img.shields.io/npm/v/@hugocxl/react-to-image.svg?logo=npm)](https://www.npmjs.com/package/@hugocxl/react-to-image)
-[![Size](https://img.shields.io/bundlephobia/minzip/@hugocxl/react-to-image)](https://bundlephobia.com/result?p=@hugocxl/react-to-image)
-[![Build](https://img.shields.io/github/actions/workflow/status/hugocxl/react-to-image/release.yml?branch=master)](https://github.com/hugocxl/react-to-image/actions/workflows/release.yml)
-[![Tests Coverage](https://img.shields.io/coverallsCoverage/github/hugocxl/react-to-image)](https://coveralls.io/github/hugocxl/react-to-image)
+[![NPM](https://img.shields.io/npm/dm/@kbox-labs/react-to-image.svg?&logo=npm)](https://www.npmjs.com/package/@kbox-labs/react-to-image)
+[![Version](https://img.shields.io/npm/v/@kbox-labs/react-to-image.svg?logo=npm)](https://www.npmjs.com/package/@kbox-labs/react-to-image)
+[![Size](https://img.shields.io/bundlephobia/minzip/@kbox-labs/react-to-image)](https://bundlephobia.com/result?p=@kbox-labs/react-to-image)
+[![Build](https://img.shields.io/github/actions/workflow/status/kbox-labs/react-to-image/release.yml?branch=master)](https://github.com/kbox-labs/react-to-image/actions/workflows/release.yml)
+[![Tests Coverage](https://img.shields.io/coverallsCoverage/github/kbox-labs/react-to-image)](https://coveralls.io/github/kbox-labs/react-to-image)
 [![Language](https://img.shields.io/badge/language-TypeScript-blue.svg)](https://www.typescriptlang.org)
-[![License](https://img.shields.io/github/license/hugocxl/react-to-image)](https://www.npmjs.com/package/@hugocxl/react-to-image)
+[![License](https://img.shields.io/github/license/kbox-labs/react-to-image)](https://www.npmjs.com/package/@kbox-labs/react-to-image)
 
 </div>
-
-![Alt](https://repobeats.axiom.co/api/embed/ae01883d171ad206316b28b61099419430155550.svg "Repobeats analytics image")
 
 ## Features
 
@@ -42,13 +40,13 @@
 
 ## Installation
 
-In order to use **`@hugocxl/react-to-image`**, all you need to do is install the
+In order to use **`@kbox-labs/react-to-image`**, all you need to do is install the
 npm package:
 
 ```sh
-npm i @hugocxl/react-to-image
+npm i @kbox-labs/react-to-image
 
-pnpm add @hugocxl/react-to-image
+pnpm add @kbox-labs/react-to-image
 ```
 
 ## Introduction
@@ -61,11 +59,11 @@ a seamless way to convert HTML elements into visual representations.
 
 ## Usage
 
-To start using `@hugocxl/react-to-image`, you just need to import any of the
+To start using `@kbox-labs/react-to-image`, you just need to import any of the
 hooks from the package.
 
 ```tsx
-import { useToSvg } from '@hugocxl/react-to-image'
+import { useToSvg } from '@kbox-labs/react-to-image'
 
 function App() {
   const [state, convertToSvg, ref] = useToSvg<HTMLDivElement>({
@@ -139,7 +137,7 @@ Apart from the following, you have all the options available to
 Use the selector option to specify the element that you want to capture instead of the ref. Useful if you need to convert elements that are far in the application structure.
 
 ```tsx
-import { useToPng } from '@hugocxl/react-to-image'
+import { useToPng } from '@kbox-labs/react-to-image'
 
 export default function App() {
   const [state, convert] = useToPng<HTMLDivElement>({
@@ -158,7 +156,7 @@ export default function App() {
 ### Using callbacks (`onStart`, `onSuccess`, `onError`)
 
 ```tsx
-import { useToBlob } from '@hugocxl/react-to-image'
+import { useToBlob } from '@kbox-labs/react-to-image'
 
 export default function App() {
   const [_, convert, ref] = useToBlob<HTMLDivElement>({
@@ -179,7 +177,7 @@ export default function App() {
 ### Save and download a compressed JPEG image
 
 ```tsx
-import { useToPng } from '@hugocxl/react-to-image'
+import { useToPng } from '@kbox-labs/react-to-image'
 
 export default function App() {
   const [_, convert, ref] = useToPng<HTMLDivElement>({
@@ -206,7 +204,7 @@ export default function App() {
 Convert a component to a PNG and copy the image to the clipboard
 
 ```tsx
-import { useToPng } from '@hugocxl/react-to-image'
+import { useToPng } from '@kbox-labs/react-to-image'
 
 export default function App() {
   const [{ isSuccess }, convert, ref] = useToPng<HTMLDivElement>({
@@ -227,7 +225,7 @@ export default function App() {
 ### Display an error message if the conversion fails
 
 ```tsx
-import { useToSvg } from '@hugocxl/react-to-image'
+import { useToSvg } from '@kbox-labs/react-to-image'
 
 export default function App() {
   const [{ isError, error }, convert, ref] = useToSvg<HTMLDivElement>()
@@ -249,7 +247,7 @@ export default function App() {
 ### Get a PNG image base64-encoded data URL and append it to the document
 
 ```tsx
-import { useToPng } from '@hugocxl/react-to-image'
+import { useToPng } from '@kbox-labs/react-to-image'
 
 export default function App() {
   const [{ isLoading }, convert, ref] = useToPng<HTMLDivElement>({
@@ -273,7 +271,7 @@ export default function App() {
 ### Get a HTMLCanvasElement, and display it right away
 
 ```tsx
-import { useToCanvas } from '@hugocxl/react-to-image'
+import { useToCanvas } from '@kbox-labs/react-to-image'
 
 export default function App() {
   const [{ isLoading }, convert, ref] = useToCanvas<HTMLDivElement>({
@@ -301,9 +299,9 @@ in this project you agree to abide by its terms.
 
 ## License
 
-**@hugocxl/react-to-image** is open source software licensed as MIT ©
-[Hugo Corta](https://github.com/hugocxl).
+**@kbox-labs/react-to-image** is open source software licensed as MIT ©
+[Hugo Corta](https://github.com/kbox-labs).
 
 ---
 
-**Made with ♥ by [@hugocxl](https://hugocxl.me)**
+**Made with ♥ by [@kbox-labs](https://kbox-labs.me)**
